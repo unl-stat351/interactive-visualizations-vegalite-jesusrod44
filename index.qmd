@@ -27,17 +27,17 @@ The TidyTuesday documentation is available [here](https://github.com/rfordatasci
 Observable does best with data that's local, so we'll read the CSVs into R objects and write them out to local CSVs (yes, we could just download them... but this gives you the chance to do an exploratory data analysis in R if you prefer.)
 
 ```{r, warning = F, message = F, output = F}
-# answers <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-07-08/answers.csv')
-# color_ranks <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-07-08/color_ranks.csv')
-# users <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-07-08/users.csv')
+answers <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-07-08/answers.csv')
+color_ranks <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-07-08/color_ranks.csv')
+users <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-07-08/users.csv')
 
-# write.csv(answers, "data/answers.csv")
-# write.csv(color_ranks, "data/color_ranks.csv")
-# write.csv(users, "data/users.csv")
+write.csv(answers, "data/answers.csv")
+write.csv(color_ranks, "data/color_ranks.csv")
+write.csv(users, "data/users.csv")
 
-answers <- readr::read_csv("data/answers.csv")
-color_ranks <- readr::read_csv("data/color_ranks.csv")
-users <- readr::read_csv("data/users.csv")
+# answers <- readr::read_csv("data/answers.csv")
+# color_ranks <- readr::read_csv("data/color_ranks.csv")
+# users <- readr::read_csv("data/users.csv")
 
 ```
 
